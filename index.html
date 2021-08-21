@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="assets/image/png" href="./assets/images/favicon.png" />
+    <title>Ben Pike | A Computer Programmer at Georgian College.</title>
+    <meta name="description" content="A Computer Programmer at Georgian College.">
+    <meta name="keywords" content="Ben Pike, Client-Side Javascript" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <script src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item"><a href="#homeprojects" class="nav__link">Home Projects</a></li>
+            <li class="nav__item"><a href="#schoolprojects" class="nav__link">School Projects</a></li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <a href="./api_page.html" class="nav__link">Super Secret API Page</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <span>Ben Pike</span>
+          </h1>
+          <p>A Computer Programmer at Georgian College.</p>
+          <a href="#contact" class="btn btn--pink">Contact Me!</a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="homeprojects" id="homeprojects">
+        <div class="row">
+          <h2>Home Projects</h2>
+          <div class="project__boxes">
+            <div class="project__box">
+              <div class="project__text">
+                <h3>Proof of Concept House Lightshow</h3>
+                <p>
+                  A take on house lightshows, but with real-time reactive lights.
+                </p>
+                <ul class="project__list">
+                  <li>Java (Processing 3)</li>
+                  <li>Arduino 1 - Firmata USB</li>
+                  <li>Arduino 2 - Serial Tx. & Rx.</li>
+                </ul>
+
+                <div class="project__links">
+                  <a href="https://photos.app.goo.gl/yakhqb4crPkaMF7F7" target="_blank" class="link__text">
+                    Watch a full song! <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/benj0670/houselighshow" title="View Source Code" target="_blank">
+                    <img src="./assets/images/github.svg" class="project__code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="project__image-box">
+                <!-- Took this part from w3schools: https://www.w3schools.com/w3css/w3css_slideshow.asp -->
+                <div class="w3-content w3-display-container">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0124.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0125.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0126.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0128.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0129.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0130.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0131.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0132.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0138.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0139.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0140.jpg">
+                  <img class="mySlides" src="./assets/images/HouseProject/IMG_0141.jpg">
+                  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="project__box">
+              <div class="project__text">
+                <h3>Music Reactive Lamps</h3>
+                <p>
+                  Wifi lamps that use a bluetooth audio reciever to create a light show.
+                </p>
+                <ul class="project__list">
+                  <li>Arduino (Wemos D1 Mini)</li>
+                  <li>C++ for Arduino</li>
+                </ul>
+
+                <div class="project__links">
+                  <a href="https://photos.app.goo.gl/RAJ3mGrJxZpbe6a59" target="_blank" class="link__text">
+                    Watch them in action! <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/benj0670/ReactiveLamps" target="_blank">
+                    <img src="./assets/images/github.svg" class="project__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="project__image-box">
+                <img src="./assets/images/LampProject/1.png" class="project__image" alt="Project 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** School Projects ***** -->
+
+      <section class="schoolprojects" id="schoolprojects">
+        <div class="row">
+          <h2>School Projects</h2>
+          <div class="project__boxes">
+            <div class="project__box">
+              <div class="project__text">
+                <h3>Igromania - Android App</h3>
+                <p>
+                  An Android app designed to bring Igromania to mobile.
+                </p>
+                <ul class="project__list">
+                  <li>Kotlin</li>
+                  <li>Google Firebase DB</li>
+                </ul>
+
+                <div class="project__links">
+                  <a href="https://www.igromania.ru/" target="_blank" class="link__text">
+                    Check out the website! <span>&rarr;</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project__image-box">
+                <img src="./assets/images/Igromania/1.png" class="project__image" alt="Project 1" />
+                <!-- Took this part from w3schools: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+              </div>
+            </div>
+
+            <div class="project__box">
+              <div class="project__text">
+                <h3>JavaScript RSS/HTML Scraper</h3>
+                <p>
+                  An RSS/HTML scraper written for creating the Android app above.
+                </p>
+                <ul class="project__list">
+                  <li>Node.JS</li>
+                  <li>Axios</li>
+                  <li>Google Firebase DB</li>
+                </ul>
+
+                <div class="project__links">
+                  <a href="https://github.com/benj0670/IgromaniaScraper" target="_blank">
+                    <img src="./assets/images/github.svg" class="project__code" title="View Source Code" alt="GitHub">
+                  </a>
+                </div>
+              </div>
+              <div class="project__image-box">
+                <img src="./assets/images/Scaper/1.png" class="project__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="project__box">
+              <div class="project__text">
+                <h3>2048 in Swift</h3>
+                <p>
+                  A simple yet challenging game of 2048 written for iOS devices.
+                </p>
+                <ul class="project__list">
+                  <li>Swift (iOS Development)</li>
+                </ul>
+              </div>
+              <div class="project__image-box">
+                <img src="./assets/images/2048/IMG_1593.JPG" class="project__image" alt="Project 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>
+                I am a Georgian College part-time student with a full-time job
+                as a Computer Programmer for the Government of Newfoundland.
+                JavaScript is a language that I have been coding in for many 
+                years and love using Visual Studio Code as my editor.
+              </p>
+              <a href="https://github.com/benj0670" target="_blank" class="btn">
+                My GitHub!<span>&rarr;</span>
+              </a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./assets/images/syed-ali-hussnain.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            Want to ask questions or just want to say "Hi 👋"? Send me and e-mail 
+            and I will do my best to respond back. 😊 
+          </p>
+          <a href="mailto:benj0670@gmail.com" class="btn">E-Mail Me!</a>
+          <a href="./message.html" class="btn">Leave Me A Message!</a>
+        </div>
+      </div>
+    </section>
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img src="./assets/images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    </a>
+  </body>
+</html>
